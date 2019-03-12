@@ -17,8 +17,8 @@ class RecorderService {
       processorBufferSize: 2048,
       stopTracksAndCloseCtxWhenFinished: true,
       usingMediaRecorder: typeof window.MediaRecorder !== 'undefined',
-      userMediaConstraints: { audio: true }
-      //userMediaConstraints: { audio: { echoCancellation: false } }
+      //userMediaConstraints: { audio: true }
+      userMediaConstraints: { audio: { echoCancellation: false } }
     }
   }
 
